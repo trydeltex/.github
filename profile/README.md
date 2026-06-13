@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>SQL that runs at the edge.</b><br>
-  A PostgreSQL-flavored query engine compiled to WebAssembly and deployed at 70+ global PoPs.<br>
+  A PostgreSQL-flavored query engine compiled to WebAssembly and deployed across a global edge network.<br>
   No origin server. No cold starts. Queries execute at the node closest to your user.
 </p>
 
@@ -45,6 +45,6 @@ See the [example apps](https://github.com/trydeltex/examples) for analytics, vec
 Deltex is an edge-native SQL database. The engine itself is compiled to WebAssembly and runs inside the CDN at every point of presence — so there's no database server to provision, no connection pool to manage, and no cold start. You talk to it over plain HTTPS from any language or runtime, including serverless and edge functions.
 
 - **Full SQL** — SELECT, joins, aggregates, window functions, CTEs, JSON, DDL, transactions
-- **Edge-native** — sub-millisecond reads from the nearest PoP
+- **Edge-native** — low-latency reads from the nearest edge location
 - **Just HTTPS** — works in Node, Bun, Deno, Workers, Vercel Edge, and any backend
 - **Postgres-compatible** — bring your existing SQL and ORMs (Drizzle, and more)
